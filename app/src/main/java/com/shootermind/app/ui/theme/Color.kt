@@ -9,3 +9,7 @@ val ScoreGold80 = Color(0xFFE8D28A)
 val RifleGreen40 = Color(0xFF2E6B4F)
 val RangeBlue40 = Color(0xFF3D5F8C)
 val ScoreGold40 = Color(0xFF7A6216)
+
+val DeepRangeGreen = Color(0xFF0F2D24)
+val RangeCream = Color(0xFFF7F4EF)
+val CardCream = Color(0xFFFFFBF4)
