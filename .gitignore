@@ -15,5 +15,6 @@
 .externalNativeBuild
 .cxx
 local.properties
+google-services.json
 hs_err_pid*.log
 replay_pid*.log
