@@ -17,6 +17,8 @@
     <string name="login_create_account">Create account</string>
     <string name="login_get_started">Get Started</string>
     <string name="login_log_in">Log In</string>
+    <string name="login_guest_loading">Signing in...</string>
+    <string name="login_guest_error">Could not continue as guest. Check your internet connection and try again.</string>
     <string name="login_or">Or</string>
     <string name="login_google_short">Google</string>
     <string name="login_facebook_short">Facebook</string>

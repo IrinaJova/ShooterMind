@@ -17,6 +17,8 @@
     <string name="login_create_account">Креирај профил</string>
     <string name="login_get_started">Започни</string>
     <string name="login_log_in">Најави се</string>
+    <string name="login_guest_loading">Најавување...</string>
+    <string name="login_guest_error">Не може да се продолжи како гостин. Провери интернет и обиди се повторно.</string>
     <string name="login_or">Или</string>
     <string name="login_google_short">Google</string>
     <string name="login_facebook_short">Facebook</string>

@@ -37,6 +37,7 @@ import com.shootermind.app.ui.theme.ShooterMindTheme
 
 @Composable
 fun LoginScreen(
+    uiState: LoginUiState,
     onContinueAsGuest: () -> Unit,
     onCreateAccountClick: () -> Unit,
     modifier: Modifier = Modifier
@@ -82,6 +83,7 @@ fun LoginScreen(
 
             Button(
                 onClick = onContinueAsGuest,
+                enabled = !uiState.isLoading,
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(54.dp),
@@ -91,9 +93,20 @@ fun LoginScreen(
                 )
             ) {
                 Text(
-                    text = stringResource(R.string.login_get_started),
+                    text = if (uiState.isLoading) {
+                        stringResource(R.string.login_guest_loading)
+                    } else {
+                        stringResource(R.string.login_get_started)
+                    },
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold
+                )
+            }
+            if (uiState.errorMessage != null) {
+                Text(
+                    text = stringResource(R.string.login_guest_error),
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = Color(0xFFB3261E)
                 )
             }
             OutlinedButton(
@@ -217,6 +230,7 @@ private fun LoginFeature(
 private fun LoginScreenPreview() {
     ShooterMindTheme {
         LoginScreen(
+            uiState = LoginUiState(),
             onContinueAsGuest = {},
             onCreateAccountClick = {}
         )
