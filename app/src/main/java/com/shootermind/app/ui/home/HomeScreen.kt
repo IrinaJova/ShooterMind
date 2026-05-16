@@ -11,8 +11,10 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.shootermind.app.R
 import com.shootermind.app.ui.theme.ShooterMindTheme
 
 @Composable
@@ -26,12 +28,12 @@ fun HomeScreen(
         verticalArrangement = Arrangement.Center
     ) {
         Text(
-            text = "ShooterMind",
+            text = stringResource(R.string.app_name),
             style = MaterialTheme.typography.headlineLarge,
             color = MaterialTheme.colorScheme.primary
         )
         Text(
-            text = "Training tracker for 10m air rifle shooters",
+            text = stringResource(R.string.home_subtitle),
             modifier = Modifier.padding(top = 8.dp),
             style = MaterialTheme.typography.bodyLarge,
             color = MaterialTheme.colorScheme.onSurfaceVariant
@@ -50,20 +52,20 @@ fun HomeScreen(
                 verticalArrangement = Arrangement.spacedBy(12.dp)
             ) {
                 Text(
-                    text = "First project goals",
+                    text = stringResource(R.string.home_goals_title),
                     style = MaterialTheme.typography.titleMedium,
                     color = MaterialTheme.colorScheme.onPrimaryContainer
                 )
                 Text(
-                    text = "Log training sessions",
+                    text = stringResource(R.string.home_goal_log_sessions),
                     style = MaterialTheme.typography.bodyMedium
                 )
                 Text(
-                    text = "Follow progress with simple statistics",
+                    text = stringResource(R.string.home_goal_statistics),
                     style = MaterialTheme.typography.bodyMedium
                 )
                 Text(
-                    text = "Keep data available offline",
+                    text = stringResource(R.string.home_goal_offline),
                     style = MaterialTheme.typography.bodyMedium
                 )
             }

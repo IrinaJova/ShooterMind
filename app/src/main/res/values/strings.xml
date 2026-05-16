@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ShooterMind</string>
+    <string name="home_subtitle">Training tracker for 10m air rifle shooters</string>
+    <string name="home_goals_title">First project goals</string>
+    <string name="home_goal_log_sessions">Log training sessions</string>
+    <string name="home_goal_statistics">Follow progress with simple statistics</string>
+    <string name="home_goal_offline">Keep data available offline</string>
 </resources>
