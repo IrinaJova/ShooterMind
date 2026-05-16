@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ShooterMind</string>
+    <string name="home_subtitle">Дневник за тренинг за стрелци со воздушна пушка на 10 метри</string>
+    <string name="home_goals_title">Први цели на проектот</string>
+    <string name="home_goal_log_sessions">Запишување тренинг сесии</string>
+    <string name="home_goal_statistics">Следење напредок со едноставна статистика</string>
+    <string name="home_goal_offline">Достапност на податоците без интернет</string>
+    <string name="language_title">Јазик</string>
+    <string name="language_english">Англиски</string>
+    <string name="language_macedonian">Македонски</string>
+</resources>

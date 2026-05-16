@@ -5,4 +5,7 @@
     <string name="home_goal_log_sessions">Log training sessions</string>
     <string name="home_goal_statistics">Follow progress with simple statistics</string>
     <string name="home_goal_offline">Keep data available offline</string>
+    <string name="language_title">Language</string>
+    <string name="language_english">English</string>
+    <string name="language_macedonian">Macedonian</string>
 </resources>
