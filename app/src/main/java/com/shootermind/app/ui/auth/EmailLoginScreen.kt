@@ -25,12 +25,12 @@ import com.shootermind.app.ui.components.TargetMark
 import com.shootermind.app.ui.theme.ShooterMindTheme
 
 @Composable
-fun RegisterScreen(
+fun EmailLoginScreen(
     uiState: AuthFormUiState,
     onEmailChange: (String) -> Unit,
     onPasswordChange: (String) -> Unit,
-    onRegisterClick: () -> Unit,
-    onBackToLoginClick: () -> Unit,
+    onLoginClick: () -> Unit,
+    onBackToWelcomeClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     Column(
@@ -40,17 +40,14 @@ fun RegisterScreen(
             .padding(24.dp),
         verticalArrangement = Arrangement.spacedBy(18.dp)
     ) {
-        TargetMark(
-            modifier = Modifier.padding(top = 24.dp)
-        )
+        TargetMark(modifier = Modifier.padding(top = 24.dp))
         Text(
-            text = stringResource(R.string.register_title),
+            text = stringResource(R.string.login_email_title),
             style = MaterialTheme.typography.headlineMedium,
             color = MaterialTheme.colorScheme.primary
         )
         Text(
-            text = stringResource(R.string.register_subtitle),
-            modifier = Modifier.padding(top = 8.dp, bottom = 32.dp),
+            text = stringResource(R.string.login_email_subtitle),
             style = MaterialTheme.typography.bodyLarge,
             color = MaterialTheme.colorScheme.onSurfaceVariant
         )
@@ -83,17 +80,15 @@ fun RegisterScreen(
         }
 
         Button(
-            onClick = onRegisterClick,
+            onClick = onLoginClick,
             enabled = !uiState.isLoading,
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(top = 24.dp)
+            modifier = Modifier.fillMaxWidth()
         ) {
             Text(
                 text = if (uiState.isLoading) {
-                    stringResource(R.string.register_loading)
+                    stringResource(R.string.login_email_loading)
                 } else {
-                    stringResource(R.string.register_action)
+                    stringResource(R.string.login_email_action)
                 }
             )
         }
@@ -109,10 +104,8 @@ fun RegisterScreen(
             )
         }
         OutlinedButton(
-            onClick = onBackToLoginClick,
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(top = 12.dp)
+            onClick = onBackToWelcomeClick,
+            modifier = Modifier.fillMaxWidth()
         ) {
             Text(text = stringResource(R.string.register_back_to_login))
         }
@@ -121,14 +114,14 @@ fun RegisterScreen(
 
 @Preview(showBackground = true)
 @Composable
-private fun RegisterScreenPreview() {
+private fun EmailLoginScreenPreview() {
     ShooterMindTheme {
-        RegisterScreen(
+        EmailLoginScreen(
             uiState = AuthFormUiState(),
             onEmailChange = {},
             onPasswordChange = {},
-            onRegisterClick = {},
-            onBackToLoginClick = {}
+            onLoginClick = {},
+            onBackToWelcomeClick = {}
         )
     }
 }

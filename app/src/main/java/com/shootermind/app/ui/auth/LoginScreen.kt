@@ -39,6 +39,7 @@ import com.shootermind.app.ui.theme.ShooterMindTheme
 fun LoginScreen(
     uiState: LoginUiState,
     onContinueAsGuest: () -> Unit,
+    onEmailLoginClick: () -> Unit,
     onCreateAccountClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -110,7 +111,7 @@ fun LoginScreen(
                 )
             }
             OutlinedButton(
-                onClick = { },
+                onClick = onEmailLoginClick,
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(52.dp),
@@ -232,6 +233,7 @@ private fun LoginScreenPreview() {
         LoginScreen(
             uiState = LoginUiState(),
             onContinueAsGuest = {},
+            onEmailLoginClick = {},
             onCreateAccountClick = {}
         )
     }

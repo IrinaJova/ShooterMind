@@ -19,6 +19,12 @@
     <string name="login_log_in">Log In</string>
     <string name="login_guest_loading">Signing in...</string>
     <string name="login_guest_error">Could not continue as guest. Check your internet connection and try again.</string>
+    <string name="login_email_title">Log in with email</string>
+    <string name="login_email_subtitle">Use your ShooterMind account to continue tracking your training.</string>
+    <string name="login_email_action">Log in</string>
+    <string name="login_email_loading">Logging in...</string>
+    <string name="auth_error">Authentication failed. Check your details and try again.</string>
+    <string name="auth_empty_fields_error">Enter email and password first.</string>
     <string name="login_or">Or</string>
     <string name="login_google_short">Google</string>
     <string name="login_facebook_short">Facebook</string>
@@ -26,10 +32,11 @@
     <string name="login_feature_analyze">Analyze your performance</string>
     <string name="login_feature_focus">Improve your focus</string>
     <string name="register_title">Create your account</string>
-    <string name="register_subtitle">Email registration will be connected to Firebase Authentication later.</string>
+    <string name="register_subtitle">Create an email account to save your training progress.</string>
     <string name="register_email_hint">Email</string>
     <string name="register_password_hint">Password</string>
     <string name="register_action">Register</string>
+    <string name="register_loading">Creating account...</string>
     <string name="register_back_to_login">Back to login</string>
     <string name="home_greeting">Hi, Shooter</string>
     <string name="home_ready">Ready for today\'s training?</string>

@@ -19,6 +19,12 @@
     <string name="login_log_in">Најави се</string>
     <string name="login_guest_loading">Најавување...</string>
     <string name="login_guest_error">Не може да се продолжи како гостин. Провери интернет и обиди се повторно.</string>
+    <string name="login_email_title">Најава со е-пошта</string>
+    <string name="login_email_subtitle">Користи го твојот ShooterMind профил за да продолжиш со следење на тренингот.</string>
+    <string name="login_email_action">Најави се</string>
+    <string name="login_email_loading">Најавување...</string>
+    <string name="auth_error">Најавата не успеа. Провери ги податоците и обиди се повторно.</string>
+    <string name="auth_empty_fields_error">Прво внеси е-пошта и лозинка.</string>
     <string name="login_or">Или</string>
     <string name="login_google_short">Google</string>
     <string name="login_facebook_short">Facebook</string>
@@ -26,10 +32,11 @@
     <string name="login_feature_analyze">Анализирај го резултатот</string>
     <string name="login_feature_focus">Подобри го фокусот</string>
     <string name="register_title">Креирај профил</string>
-    <string name="register_subtitle">Регистрацијата со е-пошта подоцна ќе биде поврзана со Firebase Authentication.</string>
+    <string name="register_subtitle">Креирај профил со е-пошта за да го зачуваш напредокот од тренинг.</string>
     <string name="register_email_hint">Е-пошта</string>
     <string name="register_password_hint">Лозинка</string>
     <string name="register_action">Регистрирај се</string>
+    <string name="register_loading">Креирање профил...</string>
     <string name="register_back_to_login">Назад кон најава</string>
     <string name="home_greeting">Здраво, стрелец</string>
     <string name="home_ready">Подготвена за денешниот тренинг?</string>

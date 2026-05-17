@@ -11,4 +11,22 @@ class AuthRepository(
             firebaseAuth.signInAnonymously().await()
         }.map { }
     }
+
+    suspend fun signInWithEmail(
+        email: String,
+        password: String
+    ): Result<Unit> {
+        return runCatching {
+            firebaseAuth.signInWithEmailAndPassword(email, password).await()
+        }.map { }
+    }
+
+    suspend fun registerWithEmail(
+        email: String,
+        password: String
+    ): Result<Unit> {
+        return runCatching {
+            firebaseAuth.createUserWithEmailAndPassword(email, password).await()
+        }.map { }
+    }
 }
